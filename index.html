@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oreofe Hairmpire | Where Beauty Meets Perfection - Lagos</title>
+<meta name="description" content="Oreofe Hairmpire - Professional Hair Making, Hair Products, Treatment & Accessories in Lagos. Call 0815 490 2165">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter', Arial, sans-serif; background:#FFFCF8; color:#222; line-height:1.6; }
+h1,h2,h3 { font-family:'Playfair Display', serif; }
+a { text-decoration:none; }
+.topbar { background:#111; color:#fff; text-align:center; padding:8px; font-size:13px; }
+.topbar span { color:#E9C46A; }
+header { background:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 2px 15px rgba(0,0,0,0.08); }
+.logo-wrap { display:flex; align-items:center; gap:12px; }
+.logo-wrap img { height:58px; width:58px; object-fit:cover; border-radius:50%; border:2px solid #C9A24B; }
+.logo-wrap h1 { font-size:20px; color:#8E2F4D; line-height:1; letter-spacing:1px; }
+.logo-wrap small { font-family:'Inter'; font-size:10px; letter-spacing:1.5px; color:#888; text-transform:uppercase; }
+nav a { color:#111; margin-left:18px; font-size:14px; font-weight:600; }
+nav a:hover { color:#8E2F4D; }
+.btn { background:#C9A24B; color:#fff; padding:13px 28px; border-radius:30px; font-weight:700; display:inline-block; border:none; cursor:pointer; }
+.btn-wine { background:#8E2F4D; }
+.btn-dark { background:#111; }
+.hero { display:grid; grid-template-columns:1.1fr 0.9fr; background:#111; color:#fff; min-height:520px; }
+.hero-text { padding:60px 40px; display:flex; flex-direction:column; justify-content:center; text-align:center; align-items:center; }
+.hero-text .tag { background:#8E2F4D; display:inline-block; padding:6px 14px; border-radius:20px; font-size:12px; letter-spacing:1px; width:fit-content; margin-bottom:18px; }
+.hero-text h2 { font-size:52px; line-height:1.05; margin-bottom:15px; text-align:center; }
+.hero-text h2 span { color:#E9C46A; font-style:italic; }
+.hero-text p { color:#ddd; margin-bottom:25px; text-align:center; max-width:500px; }
+.hero-btns { display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; }
+.hero-stats { display:flex; gap:30px; margin-top:30px; justify-content:center; }
+.hero-stats div b { font-size:24px; color:#E9C46A; display:block; }
+.hero-stats div { font-size:13px; color:#bbb; }
+.hero-img { background:url('https://images.unsplash.com/photo-1562322140-8baeececf3df?w=900') center/cover; position:relative; }
+.hero-img::after { content:'★ 5.0 Rated by Customers in Lagos'; position:absolute; bottom:20px; left:20px; right:20px; background:#fff; color:#111; padding:14px; border-radius:12px; font-weight:700; font-size:14px; text-align:center; }
+.section { padding:55px 20px; max-width:1150px; margin:auto; }
+.section h2 { text-align:center; font-size:34px; color:#111; margin-bottom:8px; }
+.section h2 span { color:#8E2F4D; font-style:italic; }
+.sub { text-align:center; color:#888; margin-bottom:30px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+.card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.07); text-align:center; padding-bottom:18px; }
+.card img { width:100%; height:200px; object-fit:cover; }
+.card h3 { margin:12px 0 5px; font-size:18px; }
+.card p { color:#666; font-size:14px; padding:0 14px; }
+.price { color:#8E2F4D; font-weight:800; font-size:19px; margin:8px 0; }
+.card button { background:#111; color:#fff; border:none; padding:11px 22px; border-radius:25px; cursor:pointer; font-weight:600; }
+.card button:hover { background:#8E2F4D; }
+.badge { display:inline-block; background:#FFF0D6; color:#8E2F4D; font-size:11px; font-weight:700; padding:5px 12px; border-radius:15px; margin-top:10px; }
+.gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.gallery-item { position:relative; border-radius:18px; overflow:hidden; height:380px; background:#eee; cursor:pointer; }
+.gallery-item img { width:100%; height:100%; object-fit:cover; }
+.gallery-item .label { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.85)); color:#fff; padding:40px 14px 14px; font-weight:700; font-size:15px; }
+.gallery-item .label small { display:block; font-weight:400; color:#E9C46A; font-size:12px; }
+.gallery-item .num { position:absolute; top:12px; left:12px; background:#C9A24B; color:#fff; padding:5px 12px; border-radius:20px; font-size:12px; font-weight:700; }
+form { background:#fff; padding:28px; border-radius:18px; max-width:560px; margin:auto; box-shadow:0 10px 30px rgba(0,0,0,0.08); border-top:6px solid #8E2F4D; }
+input, select, textarea { width:100%; padding:13px; margin:8px 0 16px; border:1px solid #ddd; border-radius:12px; font-family:inherit; }
+.testi { background:#8E2F4D; color:#fff; border-radius:18px; padding:22px; }
+.testi p { font-style:italic; margin-bottom:12px; }
+.testi b { color:#E9C46A; }
+footer { background:#111; color:#fff; text-align:center; padding:35px 20px; }
+footer span { color:#E9C46A; }
+/* ONLY LOGO FOR CALL & WHATSAPP - NO WRITE UP */
+.whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; z-index:200; box-shadow:0 5px 15px rgba(0,0,0,0.3); }
+.call-float { position:fixed; bottom:20px; left:20px; background:#111; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:26px; z-index:200; box-shadow:0 5px 15px rgba(0,0,0,0.3); }
+.filter { text-align:center; margin-bottom:22px; }
+.filter button { padding:9px 18px; margin:4px; border:1px solid #C9A24B; background:#fff; border-radius:20px; cursor:pointer; font-weight:600; }
+.filter button.active { background:#8E2F4D; color:#fff; }
+.about { display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:center; }
+.about img { width:100%; height:380px; object-fit:cover; border-radius:20px; }
+@media(max-width:768px){ .hero{grid-template-columns:1fr} .hero-text{padding:35px 20px} .hero-text h2{font-size:36px} .hero-img{height:280px} .about{grid-template-columns:1fr} nav{display:none} .gallery{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<div class="topbar">✨ FREE Consultation • <span>Call 0815 490 2165</span> • WhatsApp 0816 283 2312 • Lagos, Nigeria ✨</div>
+
+<header>
+  <div class="logo-wrap">
+    <img src="logo.png" alt="Oreofe Hairmpire">
+    <div><h1>OREOFE<br>HAIRMPIRE</h1><small>Where Beauty Meets Perfection</small></div>
+  </div>
+  <nav>
+    <a href="#about">About</a><a href="#services">Services</a><a href="#works">My Works</a><a href="#treatment">Treatment</a><a href="#shop">Shop</a><a href="#booking">Booking</a><a href="#cart">🛒 (<span id="cartCount">0</span>)</a>
+  </nav>
+  <a href="https://wa.me/2348162832312" class="btn" style="padding:10px 18px; font-size:13px;">Book Now</a>
+</header>
+
+<div class="hero">
+  <div class="hero-text">
+    <span class="tag">★ LAGOS • PROFESSIONAL HAIR STYLIST</span>
+    <h2>Where Beauty<br>Meets <span>Perfection.</span></h2>
+    <p>I make hair, I sell quality hair products, I do treatment & accessories. From braids to wigs to revamp — your hair deserves the best.</p>
+    <!-- BOOK NOW CENTERED -->
+    <div class="hero-btns">
+      <a href="#booking" class="btn btn-wine">Book Appointment →</a>
+      <a href="#works" class="btn btn-dark">See My Works</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>500+</b>Happy Customers</div>
+      <div><b>4.9 ★</b>Customer Rating</div>
+      <div><b>100%</b>Human Hair</div>
+    </div>
+  </div>
+  <div class="hero-img"></div>
+</div>
+
+<div class="section" id="about">
+  <div class="about">
+    <img src="about.jpg" onerror="this.src='https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800'" alt="Oreofe at work">
+    <div>
+      <h2 style="text-align:left;">Meet <span>Oreofe</span></h2>
+      <p style="color:#666; margin:12px 0;">Hello! I'm Oreofe, the CEO of Oreofe Hairmpire. I am passionate about making women look and feel beautiful.</p>
+      <p style="color:#666;">✅ Professional Braider & Wig Maker<br>✅ Natural Hair & Treatment Specialist<br>✅ Seller of Quality Hair Products & Accessories<br>✅ Neat Work • Affordable • On Time</p>
+      <br>
+      <a href="tel:08154902165" class="btn btn-wine">📞 Call Me: 0815 490 2165</a>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="services" style="background:#fff; border-radius:20px;">
+  <h2>What I <span>Do</span></h2>
+  <p class="sub">Hair Making • Products • Treatment • Accessories</p>
+  <div class="grid">
+    <div class="card"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600"><span class="badge">01 • HAIR MAKING</span><h3>Braids & Wig Making</h3><p>Box Braids, Knotless, Wig Making, Installation, Frontal</p><div class="price">From ₦12,000</div><button onclick="bookService('Hair Making')">Book This Service</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600"><span class="badge">02 • HAIR PRODUCTS</span><h3>Hair Products</h3><p>Wigs, Bundles, Growth Oil, Edge Control, Attachment</p><div class="price">From ₦4,000</div><button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop Products</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=600"><span class="badge">03 • TREATMENT</span><h3>Hair Treatment</h3><p>Natural Hair Treatment, Silk Press, Wig Revamp, Wash & Condition</p><div class="price">From ₦12,000</div><button onclick="bookService('Treatment')">Book Treatment</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600"><span class="badge">04 • ACCESSORIES</span><h3>Accessories</h3><p>Bonnets, Wig Stands, Brushes, Bands, Clips & More</p><div class="price">From ₦3,000</div><button onclick="filterProducts('Accessories',document.querySelector('.filter button'))">Shop Accessories</button></div>
+  </div>
+</div>
+
+<div class="section" id="works">
+  <h2>My <span>Works</span> - Real Works by Oreofe</h2>
+  <p class="sub">6 Real Works • Tap any picture to book same style</p>
+  <div class="gallery">
+    <div class="gallery-item" onclick="bookService('Knotless Braids with Curly Ends - Work 1')">
+      <span class="num">WORK 1</span>
+      <img src="work1.jpg" onerror="this.src='https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600'">
+      <div class="label">Long Knotless Braids with Curly Ends<small>Click to book this style • From ₦30,000</small></div>
+    </div>
+    <div class="gallery-item" onclick="bookService('Stitch Cornrows with Design - Work 2')">
+      <span class="num">WORK 2</span>
+      <img src="work2.jpg" onerror="this.src='https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600'">
+      <div class="label">Stitch Cornrows with Design<small>Click to book this style • From ₦20,000</small></div>
+    </div>
+    <div class="gallery-item" onclick="bookService('Star / Constellation Cornrows - Work 3')">
+      <span class="num">WORK 3</span>
+      <img src="work3.jpg" onerror="this.src='https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600'">
+      <div class="label">Star / Constellation Cornrows<small>Click to book this style • From ₦22,000</small></div>
+    </div>
+    <div class="gallery-item" onclick="bookService('Cornrows into Long Twists - Work 4')">
+      <span class="num">WORK 4</span>
+      <img src="work4.jpg" onerror="this.src='https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600'">
+      <div class="label">Cornrows into Long Twists<small>Click to book this style • From ₦25,000</small></div>
+    </div>
+    <div class="gallery-item" onclick="bookService('Curved Stitch Cornrows - Work 5')">
+      <span class="num">WORK 5</span>
+      <img src="work5.jpg" onerror="this.src='https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=600'">
+      <div class="label">Curved Stitch Cornrows<small>Click to book this style • From ₦20,000</small></div>
+    </div>
+    <div class="gallery-item" onclick="bookService('Zig-Zag Stitch Cornrows - Work 6')">
+      <span class="num">WORK 6</span>
+      <img src="work6.jpg" onerror="this.src='https://images.unsplash.com/photo-1523263685509-57c1d050d19b?w=600'">
+      <div class="label">Zig-Zag Stitch Cornrows<small>Click to book this style • From ₦22,000</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="treatment" style="background:#fff; border-radius:20px;">
+  <h2>Hair <span>Treatment</span> Services</h2>
+  <p class="sub">Healthy hair is beautiful hair. Let us treat and revive your hair.</p>
+  <div class="grid">
+    <div class="card"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=600"><span class="badge">TREATMENT</span><h3>Natural Hair Treatment</h3><p>Wash, Deep Condition, Protein Treatment, Trim & Steam.</p><div class="price">₦18,000</div><button onclick="bookService('Natural Hair Treatment - ₦18,000')">Book Treatment</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600"><span class="badge">TREATMENT</span><h3>Silk Press</h3><p>Smooth, silky, straight finish without damage.</p><div class="price">₦15,000</div><button onclick="bookService('Silk Press - ₦15,000')">Book Silk Press</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600"><span class="badge">TREATMENT</span><h3>Wig Revamp & Laundry</h3><p>Bring your old wig back to life. Wash, restyle & revive.</p><div class="price">₦12,000</div><button onclick="bookService('Wig Revamp - ₦12,000')">Book Revamp</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600"><span class="badge">TREATMENT</span><h3>Scalp Treatment & Hair Growth</h3><p>Scalp massage, dandruff treatment, growth oil therapy.</p><div class="price">₦16,000</div><button onclick="bookService('Scalp Treatment - ₦16,000')">Book Scalp Treatment</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600"><span class="badge">TREATMENT</span><h3>Deep Conditioning & Steam</h3><p>Intensive moisture for dry, brittle hair.</p><div class="price">₦14,000</div><button onclick="bookService('Deep Conditioning - ₦14,000')">Book Deep Conditioning</button></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600"><span class="badge">TREATMENT</span><h3>Wash, Blow Dry & Styling</h3><p>Complete wash day service. Wash, blow dry & style.</p><div class="price">₦10,000</div><button onclick="bookService('Wash & Blow Dry - ₦10,000')">Book Wash Day</button></div>
+  </div>
+</div>
+
+<div class="section" id="shop">
+  <h2>Shop <span>Products & Accessories</span></h2>
+  <p class="sub">Quality products - Nationwide Delivery Available</p>
+  <div class="filter">
+    <button class="active" onclick="filterProducts('all',this)">All</button>
+    <button onclick="filterProducts('Wigs',this)">Wigs</button>
+    <button onclick="filterProducts('Products',this)">Hair Products</button>
+    <button onclick="filterProducts('Treatment',this)">Treatment</button>
+    <button onclick="filterProducts('Accessories',this)">Accessories</button>
+  </div>
+  <div class="grid" id="products"></div>
+</div>
+
+<div class="section">
+  <h2>What Customers <span>Say</span> ❤️</h2>
+  <div class="grid">
+    <div class="testi"><p>"Oreofe is the best! My knotless braids were so neat, everybody was asking me where I made my hair."</p><b>— Ada, Ojo</b><br>⭐⭐⭐⭐⭐</div>
+    <div class="testi"><p>"I bought bone straight wig from her, original human hair. And her treatment saved my natural hair."</p><b>— Funmi, LASU</b><br>⭐⭐⭐⭐⭐</div>
+    <div class="testi"><p>"Very professional and on time. Her wig revamp made my old wig look brand new."</p><b>— Chioma, Festac</b><br>⭐⭐⭐⭐⭐</div>
+  </div>
+</div>
+
+<div class="section" id="cart">
+  <h2>Your <span>Cart</span></h2>
+  <div style="background:#fff; padding:22px; border-radius:18px;">
+    <div id="cartItems">Your cart is empty.</div>
+    <h3 style="margin-top:15px;">Total: ₦<span id="total">0</span></h3>
+    <button class="btn" onclick="checkout()">Checkout on WhatsApp</button>
+  </div>
+</div>
+
+<div class="section" id="booking">
+  <h2>Book Your <span>Appointment</span></h2>
+  <p class="sub">Call 0815 490 2165 • WhatsApp 0816 283 2312 • Or fill form below</p>
+  <form onsubmit="book(event)">
+    <label>Your Name *</label><input type="text" id="bName" placeholder="e.g. Ada" required>
+    <label>Your Phone / WhatsApp *</label><input type="tel" placeholder="e.g. 0803..." required>
+    <label>What Do You Want? *</label>
+    <select id="bService">
+      <option>Knotless Braids with Curly Ends (Work 1)</option>
+      <option>Stitch Cornrows with Design (Work 2)</option>
+      <option>Star / Constellation Cornrows (Work 3)</option>
+      <option>Cornrows into Long Twists (Work 4)</option>
+      <option>Curved Stitch Cornrows (Work 5)</option>
+      <option>Zig-Zag Stitch Cornrows (Work 6)</option>
+      <option>Hair Making - Box Braids ₦25,000</option>
+      <option>Hair Making - Wig Making & Install ₦20,000</option>
+      <option>Treatment - Natural Hair Treatment ₦18,000</option>
+      <option>Treatment - Silk Press ₦15,000</option>
+      <option>Treatment - Wig Revamp ₦12,000</option>
+      <option>Treatment - Scalp Treatment ₦16,000</option>
+      <option>Buy Hair Products</option>
+      <option>Buy Accessories</option>
+    </select>
+    <label>Preferred Date *</label><input type="date" required>
+    <label>Which Style?</label>
+    <textarea placeholder="e.g. I want Work 6 style, length 26, colour 1b..."></textarea>
+    <button class="btn" type="submit" style="width:100%; background:#8E2F4D;">Confirm Booking →</button>
+  </form>
+</div>
+
+<footer>
+  <h2 style="color:#fff; font-size:26px;">OREOFE <span>HAIRMPIRE</span></h2>
+  <p>Where Beauty Meets Perfection 👑</p><br>
+  <p>📍 LASU Road, Ojo, Lagos<br>📞 Call: <a href="tel:08154902165" style="color:#E9C46A;">0815 490 2165</a><br>💬 WhatsApp: <a href="https://wa.me/2348162832312" style="color:#E9C46A;">0816 283 2312</a><br>🕐 Mon - Sat: 9am - 7pm</p><br>
+  <p style="color:#888; font-size:13px;">© 2026 Oreofe Hairmpire. All rights reserved.</p>
+</footer>
+
+<!-- ONLY LOGO - NO WRITE UP -->
+<a class="whatsapp" href="https://wa.me/2348162832312?text=Hi%20Oreofe%20Hairmpire%2C%20I%20want%20to%20book">💬</a>
+<a class="call-float" href="tel:08154902165">📞</a>
+
+<script>
+const products = [
+  { name:"Bone Straight Wig 26\"", price:85000, cat:"Wigs", img:"https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600", desc:"100% Human Hair" },
+  { name:"Curly Wig 22\"", price:65000, cat:"Wigs", img:"https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600", desc:"Bouncy Curls" },
+  { name:"Deep Wave Bundle", price:70000, cat:"Wigs", img:"https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600", desc:"3 Bundles" },
+  { name:"Hair Growth Oil", price:12000, cat:"Products", img:"https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600", desc:"For fast growth" },
+  { name:"Braiding Attachment", price:5000, cat:"Products", img:"https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600", desc:"Premium Attachment" },
+  { name:"Edge Control Gel", price:6000, cat:"Products", img:"https://images.unsplash.com/photo-1585232351009-aa87416fca90?w=600", desc:"Strong hold" },
+  { name:"Deep Conditioner / Hair Mask", price:15000, cat:"Treatment", img:"https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600", desc:"For soft & healthy hair" },
+  { name:"Leave-in Conditioner", price:9000, cat:"Treatment", img:"https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600", desc:"For natural hair" },
+  { name:"Satin Bonnet", price:4000, cat:"Accessories", img:"https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600", desc:"Protect hair at night" },
+  { name:"Wig Stand + Brush Set", price:8000, cat:"Accessories", img:"https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=600", desc:"Wig care set" },
+  { name:"Hair Clips & Bands Pack", price:5000, cat:"Accessories", img:"https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600", desc:"Stylish accessories" },
+  { name:"Blonde Pixie Wig", price:45000, cat:"Wigs", img:"https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600", desc:"Short & Classy" },
+];
+let cart=[]; let total=0;
+function render(filter='all'){
+  const grid=document.getElementById('products'); grid.innerHTML='';
+  products.forEach((p)=>{
+    if(filter!=='all' && p.cat!==filter) return;
+    grid.innerHTML+=`<div class="card"><img src="${p.img}"><span class="badge">${p.cat.toUpperCase()}</span><h3>${p.name}</h3><p>${p.desc}</p><div class="price">₦${p.price.toLocaleString()}</div><button onclick="addToCart(${products.indexOf(p)})">Add to Cart</button></div>`;
+  });
+}
+render();
+function filterProducts(cat,btn){
+  document.querySelectorAll('.filter button').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active'); render(cat);
+}
+function addToCart(i){
+  cart.push(products[i]); total+=products[i].price;
+  document.getElementById('cartCount').innerText=cart.length;
+  document.getElementById('total').innerText=total.toLocaleString();
+  document.getElementById('cartItems').innerHTML=cart.map(c=>`• ${c.name} - ₦${c.price.toLocaleString()}<br>`).join('');
+  alert(products[i].name+" added to cart!");
+}
+function checkout(){
+  if(cart.length===0){ alert("Cart is empty!"); return; }
+  let msg="Hi Oreofe Hairmpire, I want to order: %0A"+cart.map(c=>c.name).join("%0A")+`%0A Total: ₦${total}`;
+  window.open("https://wa.me/2348162832312?text="+msg);
+}
+function bookService(s){
+  document.getElementById('bService').value = s;
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+  alert("You selected: "+s+" - Fill the booking form below to confirm.");
+}
+function book(e){
+  e.preventDefault();
+  alert("Thank you "+document.getElementById('bName').value+"! Your booking for "+document.getElementById('bService').value+" at Oreofe Hairmpire has been received. We will reach you on WhatsApp 0816 283 2312 to confirm.");
+}
+</script>
+</body>
+</html>
